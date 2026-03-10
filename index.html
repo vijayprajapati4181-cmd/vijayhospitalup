@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIJAY PRAJAPATI Hospital</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+.glass{
+background:rgba(255,255,255,0.4);
+backdrop-filter:blur(10px);
+}
+
+.pulse{
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
+
+</style>
+
+</head>
+
+<body class="bg-gray-100">
+
+
+<!-- HEADER -->
+
+<header class="fixed top-0 w-full glass shadow z-50">
+
+<div class="flex justify-center items-center p-4">
+
+<h1 class="text-xl font-bold text-blue-700">
+VIJAY PRAJAPATI Hospital
+</h1>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="pt-32 text-center px-6">
+
+<h2 class="text-3xl font-bold mb-4">
+Advanced Care, Compassionate Healing
+</h2>
+
+<p class="text-gray-600 mb-6">
+Modern healthcare with expert specialists
+</p>
+
+<a href="tel:108"
+class="pulse bg-red-600 text-white px-6 py-3 rounded-full text-lg shadow-lg">
+
+🚑 Emergency Call : 108
+
+</a>
+
+</section>
+
+
+
+<!-- DOCTORS -->
+
+<section id="doctors" class="p-8">
+
+<h2 class="text-2xl font-bold text-center mb-8">
+Expert Specialists
+</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+
+<!-- Doctor 1 -->
+
+<div class="bg-white rounded-2xl shadow p-5 text-center">
+
+<img src="https://i.ibb.co/PZDtqDGn/doctor1.png"
+class="w-24 h-24 mx-auto rounded-full mb-3 object-cover">
+
+<h3 class="font-bold">Dr Rajesh Kumar</h3>
+
+<p class="text-sm text-gray-600">
+Cardiologist | 22Y Experience
+</p>
+
+<a href="#appointment"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">
+
+Consult Now
+
+</a>
+
+</div>
+
+
+
+<!-- Doctor 2 -->
+
+<div class="bg-white rounded-2xl shadow p-5 text-center">
+
+<img src="https://i.ibb.co/1Gkmhq61/doctor2.png"
+class="w-24 h-24 mx-auto rounded-full mb-3 object-cover">
+
+<h3 class="font-bold">Dr Priya Sharma</h3>
+
+<p class="text-sm text-gray-600">
+Gynecologist | 18Y Experience
+</p>
+
+<a href="#appointment"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">
+
+Consult Now
+
+</a>
+
+</div>
+
+
+
+<!-- Doctor 3 -->
+
+<div class="bg-white rounded-2xl shadow p-5 text-center">
+
+<img src="https://i.ibb.co/9k3h9Skv/doctor3.png"
+class="w-24 h-24 mx-auto rounded-full mb-3 object-cover">
+
+<h3 class="font-bold">Dr Amit Verma</h3>
+
+<p class="text-sm text-gray-600">
+Orthopedic Surgeon | 20Y Experience
+</p>
+
+<a href="#appointment"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">
+
+Consult Now
+
+</a>
+
+</div>
+
+
+
+<!-- Doctor 4 -->
+
+<div class="bg-white rounded-2xl shadow p-5 text-center">
+
+<img src="https://i.ibb.co/XxF1xKrf/doctor4.png"
+class="w-24 h-24 mx-auto rounded-full mb-3 object-cover">
+
+<h3 class="font-bold">Dr Sneha Prajapati</h3>
+
+<p class="text-sm text-gray-600">
+Pediatrician | 15Y Experience
+</p>
+
+<a href="#appointment"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-3 inline-block">
+
+Consult Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- APPOINTMENT -->
+
+<section id="appointment" class="p-8">
+
+<h2 class="text-2xl font-bold text-center mb-6">
+Book Appointment
+</h2>
+
+<form class="max-w-md mx-auto space-y-4">
+
+<input type="text"
+placeholder="Your Name"
+class="w-full border p-3 rounded-lg">
+
+<input type="tel"
+placeholder="Phone Number"
+class="w-full border p-3 rounded-lg">
+
+<select class="w-full border p-3 rounded-lg">
+
+<option>Select Doctor</option>
+<option>Dr Rajesh Kumar</option>
+<option>Dr Priya Sharma</option>
+<option>Dr Amit Verma</option>
+<option>Dr Sneha Prajapati</option>
+
+</select>
+
+<button class="w-full bg-blue-600 text-white py-3 rounded-lg">
+Book Appointment
+</button>
+
+</form>
+
+</section>
+
+
+
+<!-- LOCATION -->
+
+<section id="location" class="p-8">
+
+<h2 class="text-2xl font-bold text-center mb-4">
+Visit Our Hospital
+</h2>
+
+<iframe
+class="w-full h-64 rounded-xl"
+src="https://maps.google.com/maps?q=lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+
+
+<!-- FLOATING APP MENU -->
+
+<div id="fabMenu"
+class="hidden fixed bottom-24 right-4 bg-white shadow-xl rounded-2xl p-4 grid grid-cols-3 gap-4 text-center z-50">
+
+<a href="#appointment">
+<div class="text-2xl">📅</div>
+<p class="text-xs">Appointment</p>
+</a>
+
+<a href="#doctors">
+<div class="text-2xl">👨‍⚕️</div>
+<p class="text-xs">Doctors</p>
+</a>
+
+<a href="#location">
+<div class="text-2xl">🏥</div>
+<p class="text-xs">Hospital</p>
+</a>
+
+<a href="tel:108">
+<div class="text-2xl">📞</div>
+<p class="text-xs">Call</p>
+</a>
+
+<a href="https://wa.me/917348784181">
+<div class="text-2xl">💬</div>
+<p class="text-xs">Chat</p>
+</a>
+
+</div>
+
+
+
+<!-- + BUTTON -->
+
+<button onclick="toggleFab()"
+class="fixed bottom-6 right-6 bg-blue-600 text-white text-3xl w-16 h-16 rounded-full shadow-lg">
+
++
+
+</button>
+
+
+
+<script>
+
+function toggleFab(){
+document.getElementById("fabMenu").classList.toggle("hidden")
+}
+
+</script>
+
+</body>
+</html>
